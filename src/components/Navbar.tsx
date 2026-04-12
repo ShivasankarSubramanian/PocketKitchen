@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/pocket-kitchen-logo.svg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -23,64 +22,60 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "border-b border-border bg-background/95 shadow-lg backdrop-blur-md" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:h-20">
-        <a href="#home" className="flex items-center">
-          <img
-            src={logo}
-            alt="Pocket Kitchen logo"
-            className="h-9 w-auto md:h-11"
-          />
+      <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
+        <a href="#home" className="font-heading text-xl md:text-2xl font-bold text-primary">
+          Pocket Kitchen
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
+              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
               {l.label}
             </a>
           ))}
           <a
             href="tel:8700535811"
-            className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+            className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition"
           >
-            <Phone className="h-4 w-4" /> Call Now
+            <Phone className="w-4 h-4" /> Call Now
           </a>
         </div>
 
         <button
           onClick={() => setOpen(!open)}
-          className="text-foreground md:hidden"
+          className="md:hidden text-foreground"
           aria-label="Toggle menu"
         >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background/98 backdrop-blur-md md:hidden">
-          <div className="container mx-auto flex flex-col gap-3 px-4 py-4">
+        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border">
+          <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-2 text-foreground/80 transition-colors hover:text-primary"
+                className="text-foreground/80 hover:text-primary py-2 transition-colors"
               >
                 {l.label}
               </a>
             ))}
             <a
               href="tel:8700535811"
-              className="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 font-semibold text-primary-foreground"
+              className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold"
             >
-              <Phone className="h-4 w-4" /> Call Now
+              <Phone className="w-4 h-4" /> Call Now
             </a>
           </div>
         </div>
