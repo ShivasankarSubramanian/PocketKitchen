@@ -66,7 +66,7 @@ const PlansSection = () => (
               ))}
             </ul>
             <a
-              href="https://wa.me/918700535811?text=Hi!%20I'm%20interested%20in%20the%20" + encodeURIComponent(plan.name)
+              href={`https://wa.me/918700535811?text=Hi!%20I'm%20interested%20in%20the%20${encodeURIComponent(plan.name)}`}
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold transition ${
