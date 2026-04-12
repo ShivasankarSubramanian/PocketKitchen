@@ -1,7 +1,7 @@
 import { useState } from "react";
 import fruitBowl from "@/assets/fruit-bowl.jpg";
 import muskmelonBowl from "@/assets/muskmelon-bowl.jpg";
-import PapayaBowl from "@/assets/papaya-bowl.jpeg";
+import PapayaBowl from "@/assets/Papaya-bowl.jpeg";
 import guavaBowl from "@/assets/guava-bowl.jpeg";
 import diabeticBowl from "@/assets/diabetic-bowl.jpeg";
 import ClassicBowl from "@/assets/Classic-bowl.jpeg";
@@ -9,7 +9,7 @@ import watermelonJuice from "@/assets/watermelon-juice.jpg";
 import muskmelonJuice from "@/assets/muskmelon-Juice.jpeg";
 import CoconutMilk from "@/assets/Coconut-Milk.jpeg";
 import ABCJuice  from "@/assets/ABC-Juice.jpeg";
-import papayaJuice from "@/assets/Papaya-juice.jpeg";
+import papayaJuice from "@/assets/papaya-juice.jpeg";
 import amlaShot from "@/assets/amla-shot.jpg";
 import paneerBowl from "@/assets/paneer-bowl.jpg";
 import SproutsBowl from "@/assets/Sprouts-bowl.jpeg";
