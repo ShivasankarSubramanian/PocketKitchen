@@ -15,7 +15,7 @@ import paneerBowl from "@/assets/paneer-bowl.jpg";
 import SproutsBowl from "@/assets/Sprouts-bowl.jpeg";
 import redBananaShake from "@/assets/red-banana-shake.jpg";
 import dietShake from "@/assets/diet-shake.jpg";
-import wayProtinSshake from "@/assets/wayProtin-shake.jpeg";
+import wayProtinSshake from "@/assets/weight-loss.jpeg";
 import noodles from "@/assets/noodles.jpg";
 import peanutButter from "@/assets/peanut-butter.jpg";
 import vegMaggie from "@/assets/veg-maggie.jpeg";
