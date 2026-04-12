@@ -108,3 +108,17 @@ html {
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }
+
+
+@keyframes lightboxZoom {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-lightbox-zoom {
+  animation: lightboxZoom 260ms ease-out;
+}
+
+section {
+  @apply transition-colors duration-300;
+}
