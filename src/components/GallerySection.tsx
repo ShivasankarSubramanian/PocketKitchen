@@ -21,7 +21,8 @@ const images = [
 ];
 
 const GallerySection = () => (
-  <section id="gallery" className="py-20 md:py-28 bg-secondary/50">
+  <section id="gallery" className="py-20 md:py-28">
+  {/* <section id="gallery" className="py-20 md:py-28 bg-secondary/50"> */}
     <div className="container mx-auto px-4">
       <div className="text-center mb-14">
         <span className="text-primary font-semibold text-sm uppercase tracking-widest">Gallery</span>

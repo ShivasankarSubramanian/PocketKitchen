@@ -1,11 +1,11 @@
 import { MessageCircle } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-card border-t border-border py-12">
+  <footer className="bg-card border-t border-border py-12 ">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
         <div>
-          <h3 className="font-heading text-2xl font-bold text-primary mb-2">Pocket Kitchen</h3>
+          <h3 className="font-heading text-2xl font-bold text-primary mb-2">Pockeat kitchen</h3>
           <p className="text-muted-foreground text-sm">Healthy Food at Pocket Price</p>
           <p className="text-muted-foreground text-sm mt-2">Taramani, Chennai</p>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-border pt-6 text-center text-muted-foreground text-xs">
-        © {new Date().getFullYear()} Pocket Kitchen. All rights reserved.
+        © {new Date().getFullYear()} Pockeat kitchen. All rights reserved.
       </div>
     </div>
   </footer>

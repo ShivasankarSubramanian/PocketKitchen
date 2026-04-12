@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="font-heading text-xl md:text-2xl font-bold text-primary">
-          Pocket Kitchen
+          Pockeat kitchen
         </a>
 
         <div className="hidden md:flex items-center gap-8">

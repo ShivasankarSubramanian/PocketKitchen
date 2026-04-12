@@ -1,13 +1,26 @@
 import { useState } from "react";
 import fruitBowl from "@/assets/fruit-bowl.jpg";
 import muskmelonBowl from "@/assets/muskmelon-bowl.jpg";
+import PapayaBowl from "@/assets/papaya-bowl.jpeg";
+import guavaBowl from "@/assets/guava-bowl.jpeg";
+import diabeticBowl from "@/assets/diabetic-bowl.jpeg";
+import ClassicBowl from "@/assets/Classic-bowl.jpeg";
 import watermelonJuice from "@/assets/watermelon-juice.jpg";
+import muskmelonJuice from "@/assets/muskmelon-Juice.jpeg";
+import CoconutMilk from "@/assets/Coconut-Milk.jpeg";
+import ABCJuice  from "@/assets/ABC-Juice.jpeg";
+import papayaJuice from "@/assets/papaya-juice.jpeg";
 import amlaShot from "@/assets/amla-shot.jpg";
 import paneerBowl from "@/assets/paneer-bowl.jpg";
+import SproutsBowl from "@/assets/Sprouts-bowl.jpeg";
 import redBananaShake from "@/assets/red-banana-shake.jpg";
 import dietShake from "@/assets/diet-shake.jpg";
+import wayProtinSshake from "@/assets/wayProtin-shake.jpeg";
 import noodles from "@/assets/noodles.jpg";
 import peanutButter from "@/assets/peanut-butter.jpg";
+import vegMaggie from "@/assets/veg-maggie.jpeg";
+import eggmaggie from "@/assets/egg-maggie.jpeg";
+import NutellaBread from "@/assets/Nutella-Bread.jpeg";
 
 type MenuItem = {
   name: string;
@@ -28,10 +41,10 @@ const categories: Category[] = [
     items: [
       { name: "Watermelon Fruit Bowl", medium: "₹99", large: "₹119", image: fruitBowl },
       { name: "Muskmelon Fruit Bowl", medium: "₹99", large: "₹119", image: muskmelonBowl },
-      { name: "Papaya Fruit Bowl", medium: "₹99", large: "₹119" },
-      { name: "Guava Fruit Bowl", medium: "₹109", large: "₹129" },
-      { name: "Classic Fruit Bowl Mix", medium: "₹139", large: "₹159" },
-      { name: "Diabetic Fruit Bowl Mix", medium: "₹149", large: "₹179" },
+      { name: "Papaya Fruit Bowl", medium: "₹99", large: "₹119", image:PapayaBowl },
+      { name: "Guava Fruit Bowl", medium: "₹109", large: "₹129", image:guavaBowl },
+      { name: "Classic Fruit Bowl Mix", medium: "₹139", large: "₹159",image:ClassicBowl  },
+      { name: "Diabetic Fruit Bowl Mix", medium: "₹149", large: "₹179",image:diabeticBowl },
       { name: "Energetic Fruit Bowl Mix", medium: "₹199", large: "₹219", image: fruitBowl },
     ],
   },
@@ -39,21 +52,21 @@ const categories: Category[] = [
     name: "Juices",
     items: [
       { name: "Watermelon Juice (500ml)", price: "₹99", image: watermelonJuice },
-      { name: "Muskmelon Juice (500ml)", price: "₹99" },
-      { name: "Papaya Juice (500ml)", price: "₹99" },
-      { name: "ABC Juice (500ml)", price: "₹119" },
+      { name: "Muskmelon Juice (500ml)", price: "₹99",image:muskmelonJuice },
+      { name: "Papaya Juice (500ml)", price: "₹99",image:papayaJuice },
       { name: "Amla Shot", price: "₹79", image: amlaShot },
+      { name: "ABC Juice (500ml)", price: "₹119",image:ABCJuice},
     ],
   },
   {
     name: "Special Drinks",
-    items: [{ name: "Coconut Milk ⭐ (350ml)", price: "₹139" }],
+    items: [{ name: "Coconut Milk ⭐ (350ml)", price: "₹139" , image:CoconutMilk}],
   },
   {
     name: "Diet Bowls",
     items: [
-      { name: "Sprouts Diet Bowl", price: "₹189" },
-      { name: "Egg Protein Bowl", price: "₹189" },
+      { name: "Sprouts Diet Bowl", price: "₹189",image:SproutsBowl },
+      { name: "Egg Protein Bowl", price: "₹189",image:ClassicBowl },
       { name: "Paneer Protein Bowl", price: "₹199", image: paneerBowl },
     ],
   },
@@ -62,22 +75,22 @@ const categories: Category[] = [
     items: [
       { name: "Red Banana Shake (350ml)", price: "₹149", image: redBananaShake },
       { name: "Weight Gain Protein Shake (350ml)", price: "₹169", image: dietShake },
-      { name: "Weight Loss Protein Shake (350ml)", price: "₹159" },
+      { name: "Weight Loss Protein Shake (350ml)", price: "₹159",image:wayProtinSshake },
     ],
   },
   {
     name: "Cheat Meals",
     items: [
       { name: "Plain Maggi", price: "₹79", image: noodles },
-      { name: "Veggie Maggi", price: "₹89" },
-      { name: "Egg Maggi", price: "₹99" },
+      { name: "Veggie Maggi", price: "₹89",image:vegMaggie },
+      { name: "Egg Maggi", price: "₹99",image:eggmaggie },
     ],
   },
   {
     name: "Breads",
     items: [
       { name: "Peanut Butter Bread", price: "₹99", image: peanutButter },
-      { name: "Nutella Bread", price: "₹99" },
+      { name: "Nutella Bread", price: "₹99",image:NutellaBread },
     ],
   },
 ];
@@ -129,7 +142,7 @@ const MenuSection = () => {
               )}
               <div className="p-5">
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-2">{item.name}</h3>
-                {item.price ? (
+                {/* {item.price ? (
                   <span className="text-primary font-bold text-lg">{item.price}</span>
                 ) : (
                   <div className="flex gap-4 text-sm">
@@ -140,7 +153,11 @@ const MenuSection = () => {
                       Large: <span className="text-primary font-bold">{item.large}</span>
                     </span>
                   </div>
-                )}
+                )} */}
+                <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                  {item.medium && <span>Medium</span>}
+                  {item.large && <span>Large</span>}
+                </div>
               </div>
             </div>
           ))}

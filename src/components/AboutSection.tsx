@@ -16,7 +16,7 @@ const AboutSection = () => (
           Healthy Food, <span className="text-primary">Pocket Price</span>
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
-          At Pocket Kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
+          At Pockeat kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
