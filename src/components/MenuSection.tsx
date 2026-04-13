@@ -1,6 +1,6 @@
 import { useState } from "react";
 import fruitBowl from "@/assets/fruit-bowl.jpg";
-import muskmelonBowl from "@/assets/muskmelon-gallery.png";
+import muskmelonBowl from "@/assets/muskmelon-gallery.jpeg";
 import PapayaBowl from "@/assets/Papaya-bowl.jpeg";
 import guavaBowl from "@/assets/guava-bowl.jpeg";
 import diabeticBowl from "@/assets/diabetic-bowl.jpeg";
