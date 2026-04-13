@@ -1,6 +1,6 @@
 import { useState } from "react";
 import fruitBowl from "@/assets/fruit-bowl.jpg";
-import muskmelonBowl from "@/assets/muskmelon-bowl.jpg";
+import muskmelonBowl from "@/assets/muskmelon-gallery.png";
 import PapayaBowl from "@/assets/Papaya-bowl.jpeg";
 import guavaBowl from "@/assets/guava-bowl.jpeg";
 import diabeticBowl from "@/assets/diabetic-bowl.jpeg";
@@ -16,7 +16,7 @@ import SproutsBowl from "@/assets/Sprouts-bowl.jpeg";
 import redBananaShake from "@/assets/red-banana-shake.jpg";
 import dietShake from "@/assets/diet-shake.jpg";
 import wayProtinSshake from "@/assets/weight-loss.jpeg";
-import noodles from "@/assets/noodles.jpg";
+import noodles from "@/assets/plain-maggie-gallery.jpeg";
 import peanutButter from "@/assets/peanut-butter.jpg";
 import vegMaggie from "@/assets/veg-maggie.jpeg";
 import eggmaggie from "@/assets/egg-maggie.jpeg";
