@@ -1,12 +1,11 @@
 import { useState } from "react";
-import fruitBowl from "@/assets/energy-mixed-gallery.png";
-import waterMelonfruitBowl from "@/assets/watermelon-Gallery.png";
-import muskmelonBowl from "@/assets/muskmelon-Gallery.png";
+import fruitBowl from "@/assets/fruit-bowl.jpg";
+import muskmelonBowl from "@/assets/muskmelon-bowl.jpg";
 import PapayaBowl from "@/assets/Papaya-bowl.jpeg";
 import guavaBowl from "@/assets/guava-bowl.jpeg";
 import diabeticBowl from "@/assets/diabetic-bowl.jpeg";
 import ClassicBowl from "@/assets/Classic-bowl.jpeg";
-import watermelonJuice from "@/assets/watermelon-juice-Gallery.png";
+import watermelonJuice from "@/assets/watermelon-juice.jpg";
 import muskmelonJuice from "@/assets/muskmelon-Juice.jpeg";
 import CoconutMilk from "@/assets/Coconut-Milk.jpeg";
 import ABCJuice  from "@/assets/ABC-Juice.jpeg";
@@ -17,8 +16,8 @@ import SproutsBowl from "@/assets/Sprouts-bowl.jpeg";
 import redBananaShake from "@/assets/red-banana-shake.jpg";
 import dietShake from "@/assets/diet-shake.jpg";
 import wayProtinSshake from "@/assets/weight-loss.jpeg";
-import noodles from "@/assets/plain-maggie.png";
-import peanutButter from "@/assets/Peanet-butter-Gallery.png";
+import noodles from "@/assets/noodles.jpg";
+import peanutButter from "@/assets/peanut-butter.jpg";
 import vegMaggie from "@/assets/veg-maggie.jpeg";
 import eggmaggie from "@/assets/egg-maggie.jpeg";
 import NutellaBread from "@/assets/Nutella-Bread.jpeg";
@@ -40,7 +39,7 @@ const categories: Category[] = [
   {
     name: "Fruit Bowls",
     items: [
-      { name: "Watermelon Fruit Bowl", medium: "₹99", large: "₹119", image: waterMelonfruitBowl },
+      { name: "Watermelon Fruit Bowl", medium: "₹99", large: "₹119", image: fruitBowl },
       { name: "Muskmelon Fruit Bowl", medium: "₹99", large: "₹119", image: muskmelonBowl },
       { name: "Papaya Fruit Bowl", medium: "₹99", large: "₹119", image:PapayaBowl },
       { name: "Guava Fruit Bowl", medium: "₹109", large: "₹129", image:guavaBowl },
