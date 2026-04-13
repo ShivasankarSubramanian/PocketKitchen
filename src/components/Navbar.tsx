@@ -28,9 +28,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="Pocket Kitchen" className="h-10 md:h-12 w-auto rounded-lg" />
+          <img src={logo} alt="Pockeat Kitchen" className="h-10 md:h-12 w-auto rounded-lg" />
           <span className="font-heading text-lg md:text-xl font-bold text-primary hidden sm:inline">
-            Pocket Kitchen
+            Pockeat Kitchen
           </span>
         </a>
 

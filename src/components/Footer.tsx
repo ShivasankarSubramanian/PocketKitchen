@@ -13,16 +13,16 @@ const Footer = () => (
           <div className="flex items-center gap-3">
             <img
               src={logo}
-              alt="Pocket Kitchen"
+              alt="Pockeat Kitchen"
               className="h-12 w-12 rounded-lg object-cover"
             />
             <h3 className="font-heading text-xl font-bold text-primary">
-              Pocket Kitchen
+              Pockeat Kitchen
             </h3>
           </div>
 
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Healthy Food at Pocket Price
+            Healthy Food at Pockeat Price
           </p>
 
           <p className="text-muted-foreground text-sm">
@@ -73,7 +73,7 @@ const Footer = () => (
 
       {/* Bottom */}
       <div className="border-t border-border mt-10 pt-6 text-center text-muted-foreground text-xs">
-        © {new Date().getFullYear()} Pocket Kitchen. All rights reserved.
+        © {new Date().getFullYear()} Pockeat Kitchen. All rights reserved.
       </div>
     </div>
   </footer>

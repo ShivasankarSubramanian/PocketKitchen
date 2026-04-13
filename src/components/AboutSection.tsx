@@ -13,10 +13,10 @@ const AboutSection = () => (
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-primary font-semibold text-sm uppercase tracking-widest">About Us</span>
         <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mt-3 mb-6">
-          Healthy Food, <span className="text-primary">Pocket Price</span>
+          Healthy Food, <span className="text-primary">Pockeat Price</span>
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
-          At Pocket Kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
+          At Pockeat Kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

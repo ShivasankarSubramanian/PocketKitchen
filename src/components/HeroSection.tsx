@@ -6,7 +6,7 @@ import heroNoodles from "@/assets/hero-noodles.jpg";
 import heroPlatter from "@/assets/hero-platter.jpg";
 
 const slides = [
-  { image: heroPlatter, title: "Healthy Food at Pocket Price", subtitle: "Fresh, nutritious & delicious meals delivered to your doorstep" },
+  { image: heroPlatter, title: "Healthy Food at Pockeat Price", subtitle: "Fresh, nutritious & delicious meals delivered to your doorstep" },
   { image: heroFruitBowl, title: "Energetic Fruit Bowls", subtitle: "Packed with vitamins & natural goodness" },
   { image: heroProteinShake, title: "High Protein Shakes", subtitle: "Fuel your fitness journey the right way" },
   { image: heroNoodles, title: "Comfort Meals Done Right", subtitle: "Warm, appetizing & guilt-free" },
