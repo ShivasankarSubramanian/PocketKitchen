@@ -16,14 +16,14 @@ const AboutSection = () => (
           Healthy Food, <span className="text-primary">Pocket Price</span>
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
-          At Pockeat kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
+          At Pocket Kitchen, we believe that eating healthy shouldn't cost a fortune. Based in Taramani, Chennai, we prepare fresh, protein-rich meals, vibrant fruit bowls, and energizing shakes — all designed to fuel your body and delight your palate at prices that fit every budget.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f, i) => (
           <div
             key={i}
-            className="bg-card border border-border rounded-2xl p-6 text-center hover:border-primary/40 transition-all duration-300 group"
+            className="bg-card border border-border rounded-2xl p-6 text-center hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 group"
           >
             <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition">
               <f.icon className="w-7 h-7 text-primary" />

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/brand-log.jpeg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Menu", href: "#menu" },
-  { label: "Plans", href: "#plans" },
   { label: "Gallery", href: "#gallery" },
   { label: "Contact", href: "#contact" },
 ];
@@ -27,8 +27,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
-        <a href="#home" className="font-heading text-xl md:text-2xl font-bold text-primary">
-          Pockeat kitchen
+        <a href="#home" className="flex items-center gap-2">
+          <img src={logo} alt="Pocket Kitchen" className="h-10 md:h-12 w-auto rounded-lg" />
+          <span className="font-heading text-lg md:text-xl font-bold text-primary hidden sm:inline">
+            Pocket Kitchen
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -36,14 +39,14 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-200"
             >
               {l.label}
             </a>
           ))}
           <a
             href="tel:8700535811"
-            className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition"
+            className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-200"
           >
             <Phone className="w-4 h-4" /> Call Now
           </a>
