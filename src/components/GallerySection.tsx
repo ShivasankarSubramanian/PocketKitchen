@@ -1,14 +1,14 @@
 import { useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import fruitBowl from "@/assets/fruit-bowl.jpg";
-import paneerBowl from "@/assets/paneer-bowl.jpg";
+import fruitBowl from "@/assets/energy-mixed-gallery.png";
+import paneerBowl from "@/assets/panner-protine-gallery.png";
 import noodles from "@/assets/noodles.jpg";
-import peanutButter from "@/assets/peanut-butter.jpg";
+import peanutButter from "@/assets/Peanet-butter-Gallery.png";
 import redBananaShake from "@/assets/red-banana-shake.jpg";
 import amlaShot from "@/assets/amla-shot.jpg";
 import dietShake from "@/assets/diet-shake.jpg";
-import watermelonJuice from "@/assets/watermelon-juice.jpg";
-import muskmelonBowl from "@/assets/muskmelon-bowl.jpg";
+import watermelonJuice from "@/assets/watermelon-juice-Gallery.png";
+import muskmelonBowl from "@/assets/muskmelon-Gallery.png";
 
 const images = [
   { src: paneerBowl, alt: "Paneer Protein Bowl" },

@@ -28,10 +28,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="Pockeat Kitchen" className="h-10 md:h-12 w-auto rounded-lg" />
-          <span className="font-heading text-lg md:text-xl font-bold text-primary hidden sm:inline">
+          <img src={logo} alt="Pockeat Kitchen" className="h-16 md:h-16 w-auto rounded-lg" />
+          {/* <span className="font-heading text-lg md:text-xl font-bold text-primary hidden sm:inline">
             Pockeat Kitchen
-          </span>
+          </span> */}
         </a>
 
         <div className="hidden md:flex items-center gap-8">
