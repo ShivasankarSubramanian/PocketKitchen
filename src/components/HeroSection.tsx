@@ -23,6 +23,23 @@ const HeroSection = () => {
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
   const next = () => setCurrent((c) => (c + 1) % slides.length);
 
+  const handleBadgeClick = () => {
+    // Open Zomato link in new tab
+    window.open("https://zomato.onelink.me/xqzv/62frd30f", "_blank");
+    
+    // Trigger share message intent if available
+    if (navigator.share) {
+      navigator.share({
+        title: "Pockeat Kitchen on Zomato",
+        text: "Hey, I recommend ordering from Pockeat Kitchen on Zomato",
+        url: "https://zomato.onelink.me/xqzv/62frd30f",
+      }).catch((err) => console.log("Share failed:", err));
+    } else {
+      // Fallback: copy to clipboard
+      navigator.clipboard.writeText("Hey, I recommend ordering from Pockeat Kitchen on Zomato").catch((err) => console.log("Copy failed:", err));
+    }
+  };
+
   return (
     <section id="home" className="relative h-screen overflow-hidden bg-background">
       {slides.map((s, i) => (
@@ -49,9 +66,30 @@ const HeroSection = () => {
       ))}
 
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-        <span className="inline-block bg-primary/20 text-primary px-5 py-2 rounded-full text-sm font-semibold mb-8 backdrop-blur-md border border-primary/30 animate-fade-in-up">
-          Now Available on Zomato 🎉
-        </span>
+        <div className="flex flex-col items-center gap-3 mb-8 animate-fade-in-up">
+          <button
+  onClick={handleBadgeClick}
+  className="group inline-flex items-center gap-2 
+  bg-gradient-to-r from-orange-400/80 to-orange-500/80 
+  text-white px-6 py-2.5 rounded-full text-sm font-semibold 
+  backdrop-blur-lg border border-orange-300/40 
+  hover:border-orange-200 hover:scale-105 
+  transition-all duration-300 
+  shadow-md shadow-orange-400/20 hover:shadow-orange-400/40 
+  active:scale-95"
+>
+  {/* Scooter Icon */}
+  <span className="text-lg group-hover:animate-bounce transition-transform">
+    🛵
+  </span>
+
+  Available on Zomato
+
+  {/* Pulse Dot */}
+  <span className="w-2 h-2 bg-white/80 rounded-full animate-pulse ml-1"></span>
+</button>
+          <p className="text-xs text-foreground/60 font-medium">Tap to order instantly</p>
+        </div>
         <h1
           key={`title-${current}`}
           className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-foreground max-w-4xl leading-tight mb-5 animate-fade-in-up"

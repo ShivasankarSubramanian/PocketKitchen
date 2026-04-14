@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ShoppingBag } from "lucide-react";
 import logo from "@/assets/brand-log.jpeg";
 
 const navLinks = [
@@ -34,7 +34,7 @@ const Navbar = () => {
           </span> */}
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           {navLinks.map((l) => (
             <a
               key={l.href}
@@ -44,12 +44,22 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href="tel:8700535811"
-            className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-200"
-          >
-            <Phone className="w-4 h-4" /> Call Now
-          </a>
+          <div className="flex items-center gap-3 ml-4 pl-4 border-l border-border">
+            <a
+              href="https://zomato.onelink.me/xqzv/62frd30f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gradient-to-r from-orange-500 via-orange-500 to-orange-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-orange-500/60 hover:scale-110 transition-all duration-300 shadow-md active:scale-95"
+            >
+              <ShoppingBag className="w-4 h-4" /> Order Now
+            </a>
+            <a
+              href="tel:8700535811"
+              className="flex items-center gap-2 bg-transparent border-2 border-foreground/20 text-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:border-foreground/40 hover:bg-foreground/5 transition-all duration-300"
+            >
+              <Phone className="w-4 h-4" /> Call
+            </a>
+          </div>
         </div>
 
         <button
@@ -75,10 +85,19 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="tel:8700535811"
-              className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold"
+              href="https://zomato.onelink.me/xqzv/62frd30f"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 via-orange-500 to-orange-600 text-white px-4 py-3 rounded-full font-semibold w-full shadow-md hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300 active:scale-95"
             >
-              <Phone className="w-4 h-4" /> Call Now
+              <ShoppingBag className="w-4 h-4" /> Order Now
+            </a>
+            <a
+              href="tel:8700535811"
+              className="flex items-center justify-center gap-2 bg-transparent border-2 border-foreground/20 text-foreground px-4 py-3 rounded-full font-semibold w-full hover:border-foreground/40 hover:bg-foreground/5 transition-all duration-300"
+            >
+              <Phone className="w-4 h-4" /> Call
             </a>
           </div>
         </div>
